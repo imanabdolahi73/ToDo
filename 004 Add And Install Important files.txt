@@ -1,0 +1,13 @@
+
+
+
+installs :
+	Install-Package Microsoft.AspNetCore.Identity.UI -Version 5.0.12
+	Install-Package Microsoft.AspNetCore.Authentication.JwtBearer -version 5.0.12
+	Install-Package Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore -version 5.0.12
+
+Files :
+	Add ResultDto.cs
+	
+Edit :
+	Program.cs , Add Authentication Option & Add app.UseAuthentication()

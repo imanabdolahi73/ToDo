@@ -8,6 +8,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Doc", "Doc", "{FF42F424-13A
 		001 Initial Project.txt = 001 Initial Project.txt
 		002 Install EF Core.txt = 002 Install EF Core.txt
 		003 Add dbContext.txt = 003 Add dbContext.txt
+		004 Add And Install Important files.txt = 004 Add And Install Important files.txt
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Src", "Src", "{8FCBD81B-BCA2-40F3-889D-7EBCE68D1C3E}"
@@ -22,15 +23,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Persistence", "Persistence"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{47EADC0B-1527-4D5B-AF93-A5B5586CAF8A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToDo.Common", "ToDo.Common\ToDo.Common.csproj", "{2A554D48-9362-4ED0-8C3D-FF91D60A3997}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ToDo.Common", "ToDo.Common\ToDo.Common.csproj", "{2A554D48-9362-4ED0-8C3D-FF91D60A3997}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToDo.Application", "ToDo.Application\ToDo.Application.csproj", "{124E1B02-14DA-4FDB-A940-DA982EA73E5E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ToDo.Application", "ToDo.Application\ToDo.Application.csproj", "{124E1B02-14DA-4FDB-A940-DA982EA73E5E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToDo.Domain", "ToDo.Domain\ToDo.Domain.csproj", "{B53027B0-1755-4164-94F7-5EF7011B0E34}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ToDo.Domain", "ToDo.Domain\ToDo.Domain.csproj", "{B53027B0-1755-4164-94F7-5EF7011B0E34}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToDo.Persistence", "ToDo.Persistence\ToDo.Persistence.csproj", "{30386791-967C-4475-84C1-71CED58D2017}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ToDo.Persistence", "ToDo.Persistence\ToDo.Persistence.csproj", "{30386791-967C-4475-84C1-71CED58D2017}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Endpoint.Api", "Endpoint.Api\Endpoint.Api.csproj", "{52E3466E-F25B-4150-B513-05AD750B4931}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Endpoint.Api", "Endpoint.Api\Endpoint.Api.csproj", "{52E3466E-F25B-4150-B513-05AD750B4931}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

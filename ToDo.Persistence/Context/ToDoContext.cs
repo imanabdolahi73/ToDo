@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
-using ToDo.Application.Interfaces.Context;
+using Application.Interfaces.Context;
 using ToDo.Domain.Entities;
 
 namespace ToDo.Persistence.Context;

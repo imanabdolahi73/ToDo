@@ -1,0 +1,11 @@
+initial project
+
+By : Iman Abdolahi
+
+DateTime : Tuesday , May 23 , 2023  , 11:41 AM
+
+Target Framework : ASP. Net Core 7
+
+Sln Name : ToDo
+
+Description : Api For Task Manager

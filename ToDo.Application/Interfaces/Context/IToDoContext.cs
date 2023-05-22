@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using ToDo.Domain.Entities;
 
-namespace ToDo.Application.Interfaces.Context
+namespace Application.Interfaces.Context
 {
     public interface IToDoContext
     {

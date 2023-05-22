@@ -1,0 +1,10 @@
+For Authentication
+
+Add
+	ClaimUtility.cs
+	CookiesManager.cs
+	UserRole.cs
+	AthenticationController
+
+Edit Program.cs
+	

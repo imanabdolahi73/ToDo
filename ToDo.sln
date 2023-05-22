@@ -9,6 +9,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Doc", "Doc", "{FF42F424-13A
 		002 Install EF Core.txt = 002 Install EF Core.txt
 		003 Add dbContext.txt = 003 Add dbContext.txt
 		004 Add And Install Important files.txt = 004 Add And Install Important files.txt
+		005 Read Me.txt = 005 Read Me.txt
+		006 Add ClaimUtility.cs And CookiesManager.cs.txt = 006 Add ClaimUtility.cs And CookiesManager.cs.txt
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Src", "Src", "{8FCBD81B-BCA2-40F3-889D-7EBCE68D1C3E}"

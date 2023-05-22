@@ -1,0 +1,13 @@
+Install EF Core
+
+By : Iman Abdolahi
+
+DateTime : Tuesday , May 23 , 2023  , 2:29 AM
+
+NuGet\Install-Package Microsoft.EntityFrameworkCore.SqlServer -Version 8.0.0-preview.1.23111.4
+
+NuGet\Install-Package Microsoft.EntityFrameworkCore.Tools -Version 8.0.0-preview.1.23111.4
+
+NuGet\Install-Package Microsoft.EntityFrameworkCore.Design -Version 8.0.0-preview.1.23111.4
+
+NuGet\Install-Package Microsoft.EntityFrameworkCore.Relational -Version 8.0.0-preview.1.23111.4

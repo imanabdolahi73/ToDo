@@ -1,0 +1,7 @@
+Add dbContext Database First
+
+By : Iman Abdolahi
+
+DateTime : Tuesday , May 23 , 2023  , 2:46 AM
+
+Scaffold-DbContext "Server=DESKTOP-IQ90JPA;Database=ToDo;Trusted_Connection=True;TrustServerCertificate=True;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Entities

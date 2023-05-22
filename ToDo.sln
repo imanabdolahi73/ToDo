@@ -6,6 +6,8 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Doc", "Doc", "{FF42F424-13AE-463C-B739-8B9B967DB0EF}"
 	ProjectSection(SolutionItems) = preProject
 		001 Initial Project.txt = 001 Initial Project.txt
+		002 Install EF Core.txt = 002 Install EF Core.txt
+		003 Add dbContext.txt = 003 Add dbContext.txt
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Src", "Src", "{8FCBD81B-BCA2-40F3-889D-7EBCE68D1C3E}"

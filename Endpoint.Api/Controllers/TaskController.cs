@@ -5,6 +5,7 @@ using ToDo.Application.Utilities;
 
 namespace Endpoint.Api.Controllers
 {
+    [ApiController]
     public class TaskController : Controller
     {
         public readonly ITaskManagementService _taskManagementService;
@@ -14,7 +15,7 @@ namespace Endpoint.Api.Controllers
         }
 
 
-        [HttpPost]
+        [HttpGet]
         public IActionResult List(int? UserId)
         {
             return Json(_taskManagementService.List(UserId));

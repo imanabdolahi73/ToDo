@@ -11,6 +11,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Doc", "Doc", "{FF42F424-13A
 		004 Add And Install Important files.txt = 004 Add And Install Important files.txt
 		005 Read Me.txt = 005 Read Me.txt
 		006 Add ClaimUtility.cs And CookiesManager.cs.txt = 006 Add ClaimUtility.cs And CookiesManager.cs.txt
+		007 Add TaskController And Service.txt = 007 Add TaskController And Service.txt
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Src", "Src", "{8FCBD81B-BCA2-40F3-889D-7EBCE68D1C3E}"

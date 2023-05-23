@@ -13,7 +13,7 @@ namespace ToDo.Application.Services.Task
         ResultDto Add(Add_Task_Dto request);
         ResultDto Edit(Edit_Task_Dto request);
         ResultDto ChangeStatus(ChangeStatus_Task_Dto request);
-        ResultDto Remove(int TaskID);
+        ResultDto Remove(int TaskID , int UserID);
         ResultDto<List<Domain.Entities.Task>> List(int? UserID);
     }
     public class TaskManagementService : ITaskManagementService
@@ -63,15 +63,27 @@ namespace ToDo.Application.Services.Task
                     .Where(p => p.TaskId == request.TaskId)
                     .First();
 
-                task.Title = request.Title;
-                task.UpdateDateTime = DateTime.Now;
-
-                _context.SaveChanges();
-                return new ResultDto()
+                if (request.UserId == task.UserId)
                 {
-                    IsSuccess = true,
-                    Message = "Success!",
-                };
+                    task.Title = request.Title;
+                    task.UpdateDateTime = DateTime.Now;
+
+                    _context.SaveChanges();
+                    return new ResultDto()
+                    {
+                        IsSuccess = true,
+                        Message = "Success!",
+                    };
+                }
+                else
+                {
+                    return new ResultDto()
+                    {
+                        IsSuccess = false,
+                        Message = "Access limit!",
+                    };
+                }
+                
             }
             catch (Exception e)
             {
@@ -91,15 +103,26 @@ namespace ToDo.Application.Services.Task
                     .Where(p => p.TaskId == request.TaskId)
                     .First();
 
-                task.StatusId = request.StatusID;
-                task.UpdateDateTime = DateTime.Now;
-
-                _context.SaveChanges();
-                return new ResultDto()
+                if (request.UserId == task.UserId)
                 {
-                    IsSuccess = true,
-                    Message = "Success!",
-                };
+                    task.StatusId = request.StatusID;
+                    task.UpdateDateTime = DateTime.Now;
+
+                    _context.SaveChanges();
+                    return new ResultDto()
+                    {
+                        IsSuccess = true,
+                        Message = "Success!",
+                    };
+                }
+                else
+                {
+                    return new ResultDto()
+                    {
+                        IsSuccess = false,
+                        Message = "Access limit!",
+                    };
+                }
             }
             catch (Exception e)
             {
@@ -111,7 +134,7 @@ namespace ToDo.Application.Services.Task
             }
         }
 
-        public ResultDto Remove(int TaskID)
+        public ResultDto Remove(int TaskID , int UserID)
         {
             try
             {
@@ -119,16 +142,26 @@ namespace ToDo.Application.Services.Task
                     .Where(p => p.TaskId == TaskID)
                     .First();
 
-                
-                task.RemoveDateTime = DateTime.Now;
-                task.IsRemoved = true;
-
-                _context.SaveChanges();
-                return new ResultDto()
+                if (UserID == task.UserId)
                 {
-                    IsSuccess = true,
-                    Message = "Success!",
-                };
+                    task.RemoveDateTime = DateTime.Now;
+                    task.IsRemoved = true;
+
+                    _context.SaveChanges();
+                    return new ResultDto()
+                    {
+                        IsSuccess = true,
+                        Message = "Success!",
+                    };
+                }
+                else
+                {
+                    return new ResultDto()
+                    {
+                        IsSuccess = false,
+                        Message = "Access limit!",
+                    };
+                }
             }
             catch (Exception e)
             {
@@ -140,7 +173,7 @@ namespace ToDo.Application.Services.Task
             }
         }
 
-        public ResultDto<List<Domain.Entities.Task>> Get(int? UserID)
+        public ResultDto<List<Domain.Entities.Task>> List(int? UserID)
         {
             List<Domain.Entities.Task> tasks = new List<Domain.Entities.Task> ();
             try
@@ -202,13 +235,13 @@ namespace ToDo.Application.Services.Task
     {
         public int TaskId { get; set; }
         public string Title { get; set; } = null!;
-
+        public int UserId { get; set; }
 
     }
     public class ChangeStatus_Task_Dto
     {
         public int TaskId { get; set; }
         public int StatusID { get; set; }
-
+        public int UserId { get; set; }
     }
 }

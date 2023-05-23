@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.Data.SqlClient;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
+using ToDo.Application.Services.Task;
 using ToDo.Persistence.Context;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -28,6 +29,7 @@ builder.Services.AddAuthentication(options =>
 });
 
 builder.Services.AddScoped<IToDoContext, ToDoContext>();
+builder.Services.AddScoped<ITaskManagementService, TaskManagementService>();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
